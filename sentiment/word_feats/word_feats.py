@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 17 18:08:37 2016
 
-@author: 进击的樊
+@author: Jinzhen
 """
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
