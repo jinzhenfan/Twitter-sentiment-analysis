@@ -2,7 +2,7 @@
 """
 Created on Fri Jul 15 23:49:20 2016
 
-@author: 进击的樊
+@author: Jinzhen
 """
 
 import tweepy
@@ -19,11 +19,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-"""
-public_tweets = api.home_timeline()
-for tweet in public_tweets:
-    print (tweet.text)
-    """
+
 class MyStreamListener(tweepy.StreamListener):
 ###https://github.com/tweepy/tweepy/blob/78d2883a922fa5232e8cdfab0c272c24b8ce37c4/tweepy/streaming.py
     def on_status(self, status):
@@ -37,14 +33,7 @@ class MyStreamListener(tweepy.StreamListener):
             with open('tweets_pokemon_catch4.txt','a') as tf:
                 tf.write(status.text)
         return True
-    """
-    def on_data(self, data):
-        #print data
-        if ((time.time() - start_time) < time_limit):  
-            with open('tweets_pokemon_catch3.txt','a') as tf:
-                tf.write(data)
-        return True
-        """
+
     def on_error(self, status_code):
         if status_code == 420:
             #returning False in on_data disconnects the stream
