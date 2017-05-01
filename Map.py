@@ -2,7 +2,7 @@
 """
 Created on Sat Jul 16 14:40:13 2016
 
-@author: 进击的樊
+@author: Jinzhen
 """
 matplotlib
 from mpl_toolkits.basemap import Basemap
