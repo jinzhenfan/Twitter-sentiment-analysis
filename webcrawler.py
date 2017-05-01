@@ -2,7 +2,7 @@
 """
 Created on Thu Jul 14 23:16:41 2016
 
-@author: 进击的樊
+@author: Jinzhen
 """
 ###Using urllib
 import urllib.request as ur
